@@ -1,0 +1,162 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/portfolio
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"projects":[{"id":1,"title":"E-Learning Platform","slug":"e-learning-platform","description":"A comprehensive LMS built with Laravel and Vue.js.","full_description":null,"image_url":"https:\/\/images.unsplash.com\/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80","project_url":"https:\/\/example.com","github_url":"https:\/\/github.com\/example\/lms","technologies":"Laravel, Vue.js, MySQL","featured":true,"status":"published","sort_order":0,"project_date":null,"created_at":"2026-02-18T11:01:33.000000Z","updated_at":"2026-02-18T11:01:33.000000Z"},{"id":3,"title":"SaaS Dashboard","slug":"saas-dashboard","description":"Modern analytical dashboard for SaaS applications.","full_description":null,"image_url":"https:\/\/images.unsplash.com\/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80","project_url":null,"github_url":null,"technologies":"React, Tailwind, Node.js","featured":true,"status":"published","sort_order":0,"project_date":null,"created_at":"2026-02-18T11:01:33.000000Z","updated_at":"2026-02-18T11:01:33.000000Z"}],"skills":[{"id":1,"name":"Laravel","category":"backend","proficiency":90,"icon_class":"fab fa-laravel","color":"red","sort_order":0,"is_featured":false,"description":null,"created_at":"2026-02-18T11:01:33.000000Z","updated_at":"2026-02-18T11:01:33.000000Z"},{"id":2,"name":"React","category":"frontend","proficiency":85,"icon_class":"fab fa-react","color":"blue","sort_order":0,"is_featured":false,"description":null,"created_at":"2026-02-18T11:01:33.000000Z","updated_at":"2026-02-18T11:01:33.000000Z"},{"id":3,"name":"Tailwind CSS","category":"frontend","proficiency":95,"icon_class":"fas fa-wind","color":"teal","sort_order":0,"is_featured":false,"description":null,"created_at":"2026-02-18T11:01:33.000000Z","updated_at":"2026-02-18T11:01:33.000000Z"},{"id":4,"name":"MySQL","category":"database","proficiency":80,"icon_class":"fas fa-database","color":"orange","sort_order":0,"is_featured":false,"description":null,"created_at":"2026-02-18T11:01:33.000000Z","updated_at":"2026-02-18T11:01:33.000000Z"}],"experiences":[{"id":1,"type":"work","title":"Senior Web Developer","company":"Tech Solutions Inc.","location":"Remote","description":"Leading the backend team and architecting scalable solutions.","start_date":"2023-01-01T00:00:00.000000Z","end_date":null,"is_current":true,"sort_order":1,"created_at":"2026-02-18T11:11:03.000000Z","updated_at":"2026-02-18T11:11:03.000000Z"},{"id":2,"type":"work","title":"Full Stack Developer","company":"Creative Agency","location":"New York, NY","description":"Developed client websites and e-commerce platforms.","start_date":"2020-06-01T00:00:00.000000Z","end_date":"2022-12-31T00:00:00.000000Z","is_current":false,"sort_order":2,"created_at":"2026-02-18T11:11:03.000000Z","updated_at":"2026-02-18T11:11:03.000000Z"}],"settings":{"site_title":"DevFolio","site_description":"My Personal Portfolio","contact_email":"hello@example.com"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/contact
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      email:
+        custom: []
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: zbailey@example.net
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      subject:
+        custom: []
+        name: subject
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: i
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      message:
+        custom: []
+        name: message
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: b
+      email: zbailey@example.net
+      subject: i
+      message: architecto
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/user
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null

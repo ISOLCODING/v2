@@ -16,6 +16,9 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
             },
             colors: {
+                background: "#e0e5ec",
+                "neumorph-shadow-light": "#ffffff",
+                "neumorph-shadow-dark": "#a3b1c6",
                 "fresh-blue": {
                     50: "#f0f9ff",
                     100: "#e0f2fe",
@@ -40,6 +43,10 @@ export default {
                     800: "#9a3412",
                     900: "#7c2d12",
                 },
+            },
+            boxShadow: {
+                neumorph: "9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5)",
+                "neumorph-inset": "inset 6px 6px 10px 0 rgba(163,177,198, 0.7), inset -6px -6px 10px 0 rgba(255,255,255, 0.8)",
             },
             animation: {
                 spotlight: "spotlight 2s ease .75s 1 forwards",
